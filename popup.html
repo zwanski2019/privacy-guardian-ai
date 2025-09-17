@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"utf-8\" />
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+    <title>Privacy Guardian AI</title>
+    <link rel=\"stylesheet\" href=\"styles/popup.css\" />
+  </head>
+  <body>
+    <header>
+      <img src=\"../icons/icon-128.png\" alt=\"Privacy Guardian AI Logo\" />
+      <div>
+        <h1>Privacy Guardian AI</h1>
+        <p>Real-time privacy insights</p>
+      </div>
+    </header>
+    <main>
+      <section id=\"connection-summary\" class=\"card\">
+        <h2>Recent Connections</h2>
+        <ul id=\"connection-list\" aria-live=\"polite\"></ul>
+      </section>
+      <section id=\"analysis\" class=\"card\">
+        <h2>AI Analysis</h2>
+        <p id=\"analysis-summary\">Requesting analysis...</p>
+        <ul id=\"analysis-risks\"></ul>
+        <p id=\"report-status\" class=\"muted\"></p>
+      </section>
+    </main>
+    <footer>
+      <button id=\"generate-report\">Generate Report</button>
+      <button id=\"refresh\">Refresh</button>
+      <button id=\"open-options\">Settings</button>
+    </footer>
+    <script type=\"module\" src=\"popup.js\"></script>
+  </body>
+</html>

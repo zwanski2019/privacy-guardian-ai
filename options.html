@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang=\"en\">
+  <head>
+    <meta charset=\"utf-8\" />
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+    <title>Privacy Guardian AI Settings</title>
+    <link rel=\"stylesheet\" href=\"styles/popup.css\" />
+    <style>
+      main {
+        padding: 24px;
+      }
+      .setting {
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e4ebf2;
+        padding-bottom: 16px;
+      }
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src=\"icons/icon-128.png\" alt=\"Privacy Guardian AI Logo\" />
+      <div>
+        <h1>Privacy Guardian AI</h1>
+        <p>Customize your privacy insights</p>
+      </div>
+    </header>
+    <main>
+      <section class=\"setting\">
+        <label>
+          <span>Enable AI-powered risk scoring</span>
+          <input type=\"checkbox\" id=\"enable-risk-scoring\" />
+        </label>
+        <p class=\"helper\">Requires access to Chrome's Prompt API.</p>
+      </section>
+      <section class=\"setting\">
+        <label>
+          <span>Auto-translate privacy policies</span>
+          <input type=\"checkbox\" id=\"auto-translate\" />
+        </label>
+        <p class=\"helper\">Uses Chrome's Translator API to translate detected policies.</p>
+      </section>
+      <section class=\"setting\">
+        <label>
+          <span>Generate weekly privacy reports</span>
+          <input type=\"checkbox\" id=\"weekly-reports\" />
+        </label>
+        <p class=\"helper\">Requires Writer API access and permission to schedule background tasks.</p>
+      </section>
+      <button id=\"save\">Save Preferences</button>
+      <p id=\"status\" role=\"status\"></p>
+    </main>
+    <script type=\"module\" src=\"options.js\"></script>
+  </body>
+</html>

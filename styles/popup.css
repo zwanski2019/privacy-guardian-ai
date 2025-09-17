@@ -1,0 +1,111 @@
+﻿:root {
+  --bg-color: #f5f7fa;
+  --primary: #00adb5;
+  --card-bg: #ffffff;
+  --text-dark: #1f2933;
+  --text-muted: #6b778c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  background: var(--card-bg);
+  border-bottom: 1px solid #d9e2ec;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+header p {
+  margin: 4px 0 0;
+  color: var(--text-muted);
+}
+
+main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgb(15 23 42 / 10%);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+#connection-list,
+#analysis-risks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.connection-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4ebf2;
+}
+
+.connection-item:last-child {
+  border-bottom: 0;
+}
+
+.connection-item span {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+footer {
+  padding: 12px 16px 16px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+button {
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #028189;
+}
+
+
+.muted {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+

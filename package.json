@@ -1,0 +1,17 @@
+﻿{
+  "name": "privacy-guardian-ai",
+  "version": "0.1.0",
+  "description": "Chrome extension for real-time privacy monitoring with Chrome-built AI integrations.",
+  "scripts": {
+    "lint": "echo \"Add your linter of choice (e.g. eslint).\"",
+    "build": "echo \"No build step required for MV3 extension scaffolding.\""
+  },
+  "keywords": [
+    "chrome-extension",
+    "privacy",
+    "ai",
+    "network-monitoring"
+  ],
+  "author": "Privacy Guardian AI Contributors",
+  "license": "MIT"
+}

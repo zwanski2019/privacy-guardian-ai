@@ -1,0 +1,35 @@
+﻿{
+  "manifest_version": 3,
+  "name": "Privacy Guardian AI",
+  "description": "Real-time privacy insights powered by Chrome's built-in AI APIs.",
+  "version": "0.1.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "scripting",
+    "webNavigation",
+    "aiOriginTrial"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Privacy Guardian AI"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icons/icon-128.png"
+  }
+}
